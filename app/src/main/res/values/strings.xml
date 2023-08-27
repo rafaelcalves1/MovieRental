@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Locadora</string>
+    <string name="status_filme_alugado">Alugado</string>
+    <string name="status_filme_nao_alugado">Disponível</string>
+</resources>

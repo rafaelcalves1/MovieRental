@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="@drawable/background_filme">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/logo_filme"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_fil" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/nome_filme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/logo_filme"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/logo_filme"
+        app:layout_constraintTop_toBottomOf="@id/logo_filme"
+        tools:text="Nome filme" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/status_filme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/nome_filme"
+        app:layout_constraintStart_toStartOf="@id/nome_filme"
+        app:layout_constraintTop_toBottomOf="@id/nome_filme"
+        tools:text="Alugado" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
